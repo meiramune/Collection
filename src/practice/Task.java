@@ -18,11 +18,10 @@ public class Task implements Comparable<Task> {
 	public int compareTo(Task otherTask) {
 		// taskDateが早いほうが前に来るように比較するための書き方
 		return this.taskDate.compareTo(otherTask.taskDate);
-
 	}
 
 	@Override
 	public String toString() {
-		return taskDate + taskName;
+		return this.taskDate + ":" + this.taskName;
 	}
 }
